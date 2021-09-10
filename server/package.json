@@ -1,0 +1,20 @@
+{
+  "name": "photo-gallery-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "author": "Kristian Dorland",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "morgan": "^1.10.0",
+    "jest": "^26.4.2",
+    "supertest": "^4.0.2"
+  },
+  "description": ""
+}

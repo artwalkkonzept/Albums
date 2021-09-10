@@ -1,0 +1,22 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  },
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd client/react-app && npm start",
+    "test": "cd server && npm test",
+    "preinstall": "cd server && npm install",
+    "install": "cd client/react-app && npm install",
+    "build": "cd client/react-app && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdorland/photogallery.git"
+  },
+  "author": "Kristian Dorland",
+  "license": "ISC",
+  "homepage": "https://github.com/kdorland/photogallery#readme"
+}
