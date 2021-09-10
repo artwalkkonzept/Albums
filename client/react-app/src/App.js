@@ -4,6 +4,7 @@ import { Router } from "@reach/router"
 import Albums from "./Albums";
 import Album from "./Album";
 
+console.log("Artwalks got it!");
 const APP_URL = process.env.REACT_APP_URL;
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
 
   return (
     <>
-      <h1>Photo Albums</h1>
+      <h1>Albums</h1>
       <Router>
         <Albums path="/" 
           albums={albums} 
