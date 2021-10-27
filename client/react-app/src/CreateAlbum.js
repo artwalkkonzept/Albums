@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {Link} from "@reach/router"
+import React, {useState} from 'react';
+//import {Link} from "@reach/router"
 
-const APP_URL = process.env.REACT_APP_URL;
+//const APP_URL = process.env.REACT_APP_URL;
 
 function CreateAlbum(props) {
   const [input, setInput] = useState();

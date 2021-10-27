@@ -14,9 +14,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdorland/photogallery.git"
-  },
-  "author": "Kristian Dorland",
-  "license": "ISC",
-  "homepage": "https://github.com/kdorland/photogallery#readme"
+    "url": "https://github.com"
+  }
 }
