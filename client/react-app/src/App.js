@@ -3,9 +3,7 @@ import { Router } from "@reach/router"
 
 import Albums from "./Albums";
 import Album from "./Album";
-import Gallery from "./Component/Gallery";
 
-console.log("Artwalks got it!");
 const APP_URL = process.env.REACT_APP_URL;
 
 function App() {
@@ -29,12 +27,11 @@ function App() {
     console.log("album name", name);
     formData.append('album', name);
 
-    /*const response = await fetch(`${APP_URL}api/albums`, {
+    const response = await fetch(`${APP_URL}api/albums`, {
       method: 'POST',
       body: formData
     });
-    const data = await response.json();*/
-
+    const data = await response.json();
 
     setUpdates(updates + 1); // Force reload of album
   }
@@ -65,7 +62,7 @@ function App() {
 
   return (
     <>
-      <h1>Albums</h1>
+      <h1>Photo Albums</h1>
       <Router>
         <Albums path="/" 
           albums={albums} 
@@ -76,8 +73,6 @@ function App() {
           uploadPicture={uploadPicture}
           updates={updates}></Album>
       </Router>
-      <br />
-      <Gallery/>
     </>
   );
 }

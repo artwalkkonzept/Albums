@@ -1,14 +1,11 @@
-import React, {useState} from 'react';
-//import {Link} from "@reach/router"
-
-//const APP_URL = process.env.REACT_APP_URL;
+import React, {useState, useEffect} from 'react';
 
 function CreateAlbum(props) {
   const [input, setInput] = useState();
 
   return (
-    <div className="formContent">
-      <h3>New album</h3>
+    <div class="formContent">
+      <h3>Create album</h3>
       <input type="text" name="album" placeholder="album name" 
         onChange={event => setInput(event.target.value)}/><br/>
       <button onClick={() => props.createAlbum(input)}>Create</button>

@@ -23,7 +23,7 @@ function Album(props) {
       {photos.map(element => 
         <a href={`${APP_URL}static/${element.fileName}`} 
           target="_blank" key={element.fileName} rel="noopener noreferrer">
-          <img height="270" alt={`file name: ${element.fileName}`}
+          <img alt={`file name: ${element.fileName}`}
             src={`${APP_URL}static/${element.fileName}`}>
           </img>
         </a>
