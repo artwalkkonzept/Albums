@@ -24,7 +24,7 @@ function Album(props) {
         <a href={`${APP_URL}static/${element.fileName}`} 
           target="_blank" key={element.fileName} rel="noopener noreferrer">
           <img alt={`file name: ${element.fileName}`}
-            src={`${APP_URL}static/${element.fileName}`}>
+            src={`${APP_URL}static/${element.fileName}`} width="270">
           </img>
         </a>
         )}
