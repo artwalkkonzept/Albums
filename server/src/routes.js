@@ -3,14 +3,14 @@ module.exports = (db, contentDir) => {
   const router = express.Router();
 
   /**** Routes ****/
-  router.post('/pictures', function(req, res) {
+  router.post("/pictures", function(req, res) {
     if (!req.files || Object.keys(req.files).length === 0) {
-      return res.status(400).send('No files were uploaded.');
+      return res.status(400).send("No files were uploaded.");
     }
     const uploadFile = req.files.uploadFile;
     const album = req.body.album;
 
-    // Moving uploaded file to "../content"
+    // uploaded file -> "content"
     uploadFile.mv(`${contentDir}${req.files.uploadFile.name}`, async function(err) {
       if (err) {
         console.error(err);
@@ -25,22 +25,22 @@ module.exports = (db, contentDir) => {
     });
   });
 
-  router.get('/pictures', async (req, res) => {
+  router.get("/pictures", async (req, res) => {
     const pics = await db.getPictures();
     res.json(pics);
   });
 
-  router.get('/:album/pictures', async (req, res) => {
+  router.get("/:album/pictures", async (req, res) => {
     const pics = await db.getPictures({albumTitle: req.params.album});
     res.json(pics);
   });
 
-  router.get('/albums', async (req, res) => {
+  router.get("/albums", async (req, res) => {
     const albums = await db.getAlbums();
     res.json(albums);
   });
 
-  router.post('/albums', async (req, res) => {
+  router.post("/albums", async (req, res) => {
     const album = req.body.album;
     const newDoc = await db.createAlbum(album);
     res.json({msg: "album created", data: newDoc});

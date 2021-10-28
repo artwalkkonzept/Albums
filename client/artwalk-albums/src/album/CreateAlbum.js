@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from "react";
 import {Link} from "@reach/router"
 
 const APP_URL = process.env.REACT_APP_URL;

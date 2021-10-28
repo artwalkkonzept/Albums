@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from "react";
 import { Router } from "@reach/router"
 
 import Albums from "./album/Albums";
@@ -26,10 +26,10 @@ function App() {
   async function createAlbum(name) {
     const formData = new FormData();
     console.log("album name", name);
-    formData.append('album', name);
+    formData.append("album", name);
 
     const response = await fetch(`${APP_URL}api/albums`, {
-      method: 'POST',
+      method: "POST",
       body: formData
     });
     const data = await response.json();
@@ -40,11 +40,11 @@ function App() {
   
   async function uploadPicture(file, album) {
     const formData = new FormData();
-    formData.append('uploadFile', file);
-    formData.append('album', album);
+    formData.append("uploadFile", file);
+    formData.append("album", album);
   
     const response = await fetch(`${APP_URL}api/pictures`, {
-      method: 'POST',
+      method: "POST",
       body: formData
     });
     const data = await response.json();
@@ -53,7 +53,7 @@ function App() {
     setUpdates(updates + 1); // Force reload of album
   }
 
-  // Only use effect once! ([] means don't depend on anything in the app)
+  // Only use effect once! ([] means don"t depend on anything in the app)
   useEffect(() => {
     async function getData() {
       const data = await getAlbums();

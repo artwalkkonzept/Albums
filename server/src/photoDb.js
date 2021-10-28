@@ -1,6 +1,6 @@
 module.exports = (photoDbFile, albumsDbFile) => {
   // Persistent datastore using nedb (similar to MongoDB, but embedded)
-  const Datastore = require('nedb');
+  const Datastore = require("nedb");
   const dbPhotos = new Datastore({ filename: photoDbFile, autoload: true });
   const dbAlbums = new Datastore({ filename: albumsDbFile, autoload: true });
 
