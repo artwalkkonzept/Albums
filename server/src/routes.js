@@ -25,8 +25,6 @@ module.exports = (db, contentDir) => {
     });
   });
 
-  //eventIds.indexOf(a._id.toString()) - eventIds.indexOf(b._id.toString())
-  
   router.get('/pictures', async (req, res) => {
     const pics = await db.getPictures();
     res.json(pics);

@@ -1,5 +1,5 @@
 {
-  "name": "artwalk-photo-album",
+  "name": "photo-album",
   "version": "1.0.0",
   "dependencies": {
     "nedb": "^1.8.0"
@@ -16,5 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/kdorland/photogallery.git"
   },
-  "homepage": "https://github.com/"
+  "author": "Kristian Dorland",
+  "license": "ISC",
+  "homepage": "https://github.com/kdorland/photogallery#readme"
 }
