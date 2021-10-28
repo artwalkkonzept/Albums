@@ -19,11 +19,11 @@ function Album(props) {
     <>
       <h3><Link to="/">Albums</Link> / {props.album}</h3>
 
-      <div id="photo-gallery">
+      <div id="photo-gallery" style={{maxWidth: 270}}>
       {photos.map(element => 
         <a href={`${APP_URL}static/${element.fileName}`} 
           target="_blank" key={element.fileName} rel="noopener noreferrer">
-          <img alt={`file name: ${element.fileName}`}
+          <img style={{maxWidth: 270}} alt={`file name: ${element.fileName}`}
             src={`${APP_URL}static/${element.fileName}`}>
           </img>
         </a>
