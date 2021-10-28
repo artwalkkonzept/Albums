@@ -22,7 +22,7 @@ function createServer(config) {
   app.use(morgan('combined')); 
   app.use(cors());
   app.use(fileUpload());
-  app.use(express.static(path.resolve('..', 'client', 'react-app', 'build'))); 
+  app.use(express.static(path.resolve('..', 'client', 'build'))); 
   app.use('/static', express.static(contentDir));
   
   fs.mkdirSync(contentDir, { recursive: true });
@@ -32,7 +32,7 @@ function createServer(config) {
 
   // "Redirect" all other get requests to React's entry point (index.html) to be handled by Reach router.
   app.get('*', (req, res) =>
-    res.sendFile(path.resolve('..', 'client', 'react-app', 'build', 'index.html'))
+    res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
   );
   
   return app;

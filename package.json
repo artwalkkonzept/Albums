@@ -1,5 +1,5 @@
 {
-  "name": "photo-album",
+  "name": "artwalk-photo-album",
   "version": "1.0.0",
   "dependencies": {
     "nedb": "^1.8.0"
@@ -14,6 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com"
-  }
+    "url": "git+https://github.com"
+  },
+  "homepage": "https://github.com/"
 }
