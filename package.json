@@ -6,11 +6,11 @@
   },
   "scripts": {
     "start": "cd server && npm start",
-    "dev": "cd client/react-app && npm start",
+    "dev": "cd client/artwalk-albums && npm start",
     "test": "cd server && npm test",
     "preinstall": "cd server && npm install",
-    "install": "cd client/react-app && npm install",
-    "build": "cd client/react-app && npm run build"
+    "install": "cd client/artwalk-albums && npm install",
+    "build": "cd client/artwalk-albums && npm run build"
   },
   "repository": {
     "type": "git",

@@ -17,7 +17,7 @@ function Album(props) {
 
   return (
     <>
-      <h3><Link to="/">Artwalk Albums</Link> / {props.album}</h3>
+      <h5><Link to="/">Gallery</Link> / {props.album}</h5>
 
       <div id="photo-gallery" style={{maxWidth: 270}} >
       {photos.map(element => 
