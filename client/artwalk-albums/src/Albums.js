@@ -7,7 +7,7 @@ const APP_URL = process.env.REACT_APP_URL;
 function Albums(props) {
   return (
     <>
-      <h5>Albums</h5>
+      <h3>Albums</h3>
       <div className="album-container">
         {props.albums.map((element, index) => 
           <div className="album-box">
