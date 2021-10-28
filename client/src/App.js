@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { Router } from "@reach/router"
 
-import Albums from "./Albums";
-import Album from "./Album";
-import Gallery from "./Component/Logo/Gallery";
+import Albums from "./Album/Albums";
+import Album from "./Album/Album";
+import Gallery from "./Logo/Gallery";
 
 console.log("Artwalks got it!");
 const APP_URL = process.env.REACT_APP_URL;
