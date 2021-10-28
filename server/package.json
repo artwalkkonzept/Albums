@@ -1,12 +1,12 @@
 {
-  "name": "artwalk-gallery-api",
+  "name": "photo-gallery-api",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node src/index.js"
   },
-  "author": "",
+  "author": "Kristian Dorland",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
