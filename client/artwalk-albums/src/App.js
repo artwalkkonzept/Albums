@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { Router } from "@reach/router"
 
-import Albums from "./Albums";
-import Album from "./Album";
+import Albums from "./album/Albums";
+import Album from "./album/Album";
+import Logo from "./logo/Logo";
 
 const APP_URL = process.env.REACT_APP_URL;
 
@@ -63,7 +64,7 @@ function App() {
 
   return (
     <>
-      <h3>ArtWalk</h3>
+      <h3>Create Artwalk Gallery</h3>
       <Router>
         <Albums path="/" 
           albums={albums} 
@@ -74,6 +75,8 @@ function App() {
           uploadPicture={uploadPicture}
           updates={updates}></Album>
       </Router>
+      <br />
+      <Logo/>
     </>
   );
 }
