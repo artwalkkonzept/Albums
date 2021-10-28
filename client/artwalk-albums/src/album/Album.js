@@ -17,7 +17,7 @@ function Album(props) {
 
   return (
     <>
-      <h3><Link to="/">Back to Albums</Link><br />  This Gallery is {props.album}</h3>
+      <h3><Link to="/">Back</Link><br /><br /> Gallery "{props.album}"</h3>
 
       <div id="photo-gallery" style={{maxWidth: 270}} >
       {photos.map(element => 
