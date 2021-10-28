@@ -6,7 +6,7 @@
     "test": "jest",
     "start": "node src/index.js"
   },
-  "author": "",
+  "author": "Kristian Dorland",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
