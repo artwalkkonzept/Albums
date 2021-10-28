@@ -31,8 +31,8 @@ function Album(props) {
       </div>
 
       <UploadPicture 
-        album={props.album} 
-        uploadPicture={props.uploadPicture}/>
+      album={props.album} 
+      uploadPicture={props.uploadPicture}/>
     </>
   );
 }

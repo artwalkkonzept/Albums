@@ -1,5 +1,6 @@
 import React from "react";
 import CompanyLogo from "./ArtWalk_Logo final_ww.png";
+
 function Logo() {
   return (
     <div>
@@ -7,4 +8,5 @@ function Logo() {
     </div>
   );
 }
+
 export default Logo
