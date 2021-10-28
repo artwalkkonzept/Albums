@@ -64,7 +64,7 @@ function App() {
 
   return (
     <>
-      <h3>Create Artwalk Gallery</h3>
+      <h3>Artwalk Gallery</h3>
       <Router>
         <Albums path="/" 
           albums={albums} 

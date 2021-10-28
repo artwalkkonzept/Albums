@@ -7,8 +7,10 @@ const APP_URL = process.env.REACT_APP_URL;
 function Albums(props) {
   return (
     <>
-      <h3>Albums</h3>
+      <h3>Create Album</h3>
       <div className="album-container">
+      <CreateAlbum createAlbum={props.createAlbum}></CreateAlbum>
+      <hr />
         {props.albums.map((element, index) => 
           <div className="album-box">
          
@@ -17,7 +19,6 @@ function Albums(props) {
           </div>
         )}
       </div>
-      <CreateAlbum createAlbum={props.createAlbum}></CreateAlbum>
     </>
   );
 }
