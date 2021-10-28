@@ -8,7 +8,7 @@ function CreateAlbum(props) {
 
   return (
     <div class="formContent">
-      <label>Select Name</label>
+      <label>Select Album name</label>
       <br />
       <input type="text" name="album" placeholder="album name" 
         onChange={event => setInput(event.target.value)}/><br/>
