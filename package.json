@@ -11,5 +11,10 @@
     "preinstall": "cd server && npm install",
     "install": "cd client/react-app && npm install",
     "build": "cd client/react-app && npm run build"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artwalkkonzept/Albums.git"
+  },
+  "author": ""
 }
