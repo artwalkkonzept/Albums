@@ -30,11 +30,11 @@ function Album(props) {
         )}
       </div>
 
-      <Link to="/">Back</Link>
-
       <UploadPicture 
       album={props.album} 
       uploadPicture={props.uploadPicture}/>
+      <br />
+      <Link to="/">Back</Link>
     </>
   );
 }
