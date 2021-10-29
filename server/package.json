@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/index.js"
+    "start": "node index.js"
   },
   "author": "Kristian Dorland",
   "license": "ISC",
