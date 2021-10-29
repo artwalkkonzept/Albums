@@ -20,11 +20,6 @@ function Album(props) {
       <Link to="/">Back</Link>
       <br />
       <h3> Gallery "{props.album}"</h3>
-      
-      <UploadPicture 
-      album={props.album} 
-      uploadPicture={props.uploadPicture}/>
-      <br />
 
       <div id="photo-gallery" style={{maxWidth: 270}} >
       {photos.map(element => 
@@ -36,6 +31,11 @@ function Album(props) {
         </a>
         )}
       </div>
+
+      <br />
+      <UploadPicture 
+      album={props.album} 
+      uploadPicture={props.uploadPicture}/>
     </>
   );
 }

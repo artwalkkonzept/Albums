@@ -2,7 +2,6 @@ import React from "react";
 import {Link} from "@reach/router"
 import CreateAlbum from "./CreateAlbum";
 
-const APP_URL = process.env.REACT_APP_URL;
 const hr = {
   maxWidth: 270,
   marginLeft: 0,

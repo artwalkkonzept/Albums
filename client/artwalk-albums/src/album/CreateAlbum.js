@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from "react";
-
-const APP_URL = process.env.REACT_APP_URL;
+import React, {useState} from "react";
 
 function CreateAlbum(props) {
   const [input, setInput] = useState();

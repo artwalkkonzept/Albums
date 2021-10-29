@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 
-const APP_URL = process.env.REACT_APP_URL;
-
 function UploadPicture(props) {
   const [file, setFile] = useState();
 
@@ -11,7 +9,7 @@ function UploadPicture(props) {
 
   return (
     <div class="formContent">
-      <label>Upload a picture</label><br/>
+      <label>Upload a picture {props.album}</label><br/>
       <input type="file" name="uploadFile" onChange={handleFileChange}/><br/>
       <button type="submit" onClick={() => props.uploadPicture(file, props.album)}>Upload!</button>
     </div>
