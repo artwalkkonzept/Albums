@@ -4,9 +4,9 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node ./index.js"
   },
-  "author": "Kristian Dorland",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
